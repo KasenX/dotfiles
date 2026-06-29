@@ -1,0 +1,56 @@
+[alias]
+  # Show verbose output about tags, branches or remotes
+ 	l = log --oneline --graph --decorate
+	# --exclude=refs/* --all is to exclude everything except HEAD for the cases when the HEAD is detached
+	ll = log --oneline --graph --decorate --branches --exclude=refs/* --all
+	lll = log --oneline --graph --decorate --all
+  tags = tag -l
+  branches = branch -a
+  remotes = remote -v
+  # Pretty log output
+  hist = log --graph --pretty=format:'%Cred%h%Creset %s%C(yellow)%d%Creset %Cgreen(%cr)%Creset [%an]' --abbrev-commit --date=relative
+  ai-msg = "!f() { bash ~/GitHub/scripts/git-ai-commit.sh; }; f"
+
+[color]
+  # Use colors in Git commands that are capable of colored output when
+  # outputting to the terminal. (This is the default setting in Git ≥ 1.8.4.)
+  ui = auto
+[color "branch"]
+  current = yellow reverse
+  local = yellow
+  remote = green
+[color "diff"]
+  meta = yellow bold
+  frag = magenta bold
+  old = red bold
+  new = green bold
+[color "status"]
+  added = yellow
+  changed = green
+  untracked = cyan
+[user]
+	name = Jakub Janeček
+	email = kuba.rone@gmail.com
+	signingkey = ~/.ssh/id_ed25519.pub
+[includeIf "gitdir:~/CDN77/"]
+  path = ~/.gitconfig-cdn77
+[core]
+	excludesfile = ~/.gitignore
+	editor = nvim
+  pager = delta
+
+[interactive]
+  diffFilter = delta --color-only
+
+[delta]
+  navigate = true
+  dark = true
+  side-by-side = true
+
+[merge]
+  conflictstyle = zdiff3
+
+[gpg]
+	format = ssh
+[commit]
+	gpgsign = true
