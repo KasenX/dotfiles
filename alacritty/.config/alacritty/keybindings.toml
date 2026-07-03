@@ -26,25 +26,25 @@ chars = "\u001b}"
 [[keyboard.bindings]]
 key = "H"
 mods = "Command"
-chars = "\u001bh"
+chars = "\u0008"
 
 # Select the tmux pane below
 [[keyboard.bindings]]
 key = "J"
 mods = "Command"
-chars = "\u001bj"
+chars = "\u000a"
 
 # Select the tmux pane above
 [[keyboard.bindings]]
 key = "K"
 mods = "Command"
-chars = "\u001bk"
+chars = "\u000b"
 
 # Select the tmux pane to the right
 [[keyboard.bindings]]
 key = "L"
 mods = "Command"
-chars = "\u001bl"
+chars = "\u000c"
 
 # Move cursor backward by one word
 [[keyboard.bindings]]
