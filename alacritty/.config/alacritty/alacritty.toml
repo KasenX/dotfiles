@@ -1,0 +1,19 @@
+[general]
+import = ["~/.config/alacritty/keybindings.toml"]
+
+[window]
+decorations = "Buttonless"
+
+padding = { x = 12, y = 12 }
+
+opacity = 0.85
+blur = true
+
+[font]
+normal = { family = "JetBrainsMono Nerd Font", style = "Regular" }
+bold = { family = "JetBrainsMono Nerd Font", style = "Bold" }
+italic = { family = "JetBrainsMono Nerd Font", style = "Italic" }
+size = 13.0
+
+[scrolling]
+history = 0

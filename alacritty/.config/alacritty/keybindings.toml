@@ -1,0 +1,71 @@
+# Open a new tmux window
+[[keyboard.bindings]]
+key = "T"
+mods = "Command"
+chars = "\u001bt"
+
+# Close the current tmux window
+[[keyboard.bindings]]
+key = "W"
+mods = "Command"
+chars = "\u001bw"
+
+# Switch to the previous tmux window
+[[keyboard.bindings]]
+key = "{"
+mods = "Command|Shift"
+chars = "\u001b{"
+
+# Switch to the next tmux window
+[[keyboard.bindings]]
+key = "}"
+mods = "Command|Shift"
+chars = "\u001b}"
+
+# Select the tmux pane to the left
+[[keyboard.bindings]]
+key = "H"
+mods = "Command"
+chars = "\u001bh"
+
+# Select the tmux pane below
+[[keyboard.bindings]]
+key = "J"
+mods = "Command"
+chars = "\u001bj"
+
+# Select the tmux pane above
+[[keyboard.bindings]]
+key = "K"
+mods = "Command"
+chars = "\u001bk"
+
+# Select the tmux pane to the right
+[[keyboard.bindings]]
+key = "L"
+mods = "Command"
+chars = "\u001bl"
+
+# Move cursor backward by one word
+[[keyboard.bindings]]
+key = "Left"
+mods = "Option"
+chars = "\u001bb"
+
+# Move cursor forward by one word
+[[keyboard.bindings]]
+key = "Right"
+mods = "Option"
+chars = "\u001bf"
+
+# Move cursor to the start of the line
+[[keyboard.bindings]]
+key = "Left"
+mods = "Command"
+chars = "\u0001"
+
+# Move cursor to the end of the line
+[[keyboard.bindings]]
+key = "Right"
+mods = "Command"
+chars = "\u0005"
