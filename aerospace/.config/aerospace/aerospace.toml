@@ -126,7 +126,7 @@ T = 'main'
 9 = ['secondary', 'main']
 
 [[on-window-detected]]
-if.app-id = 'com.googlecode.iterm2'
+if.app-id = 'org.alacritty'
 run = 'move-node-to-workspace T'
 
 [[on-window-detected]]
