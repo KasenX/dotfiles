@@ -69,3 +69,8 @@ chars = "\u0001"
 key = "Right"
 mods = "Command"
 chars = "\u0005"
+
+[[keyboard.bindings]]
+key = "Enter"
+mods = "Shift"
+chars = "\x1b\r"
