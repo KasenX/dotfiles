@@ -68,6 +68,7 @@ path=(
   "/Library/Frameworks/GStreamer.framework/Versions/1.0/bin"
   "/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
   "$HOME/bin"
+  "$HOME/go/bin"
   $path
   "$HOME/.local/bin"
 )
