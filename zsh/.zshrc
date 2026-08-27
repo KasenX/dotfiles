@@ -14,6 +14,7 @@ plugins=(
 )
 
 ZSH_TMUX_AUTOSTART=true
+ZSH_TMUX_FIXTERM=false
 
 source "$ZSH/oh-my-zsh.sh"
 
