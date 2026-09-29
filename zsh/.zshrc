@@ -54,6 +54,10 @@ if command -v zoxide >/dev/null 2>&1; then
   eval "$(zoxide init zsh)"
 fi
 
+if command -v direnv >/dev/null 2>&1; then
+  eval "$(direnv hook zsh)"
+fi
+
 command -v sccache >/dev/null 2>&1 && export RUSTC_WRAPPER="sccache"
 
 command -v nvim >/dev/null 2>&1 && alias vim="nvim"
