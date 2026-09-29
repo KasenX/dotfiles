@@ -59,6 +59,7 @@ command -v sccache >/dev/null 2>&1 && export RUSTC_WRAPPER="sccache"
 command -v nvim >/dev/null 2>&1 && alias vim="nvim"
 command -v eza >/dev/null 2>&1 && alias ls="eza --group-directories-first"
 command -v bat >/dev/null 2>&1 && alias cat="bat --paging=never --plain"
+command -v kubecolor >/dev/null 2>&1 && alias k="kubecolor"
 
 # PATH
 typeset -U path PATH
@@ -75,6 +76,11 @@ path=(
 )
 
 export PATH
+
+# nvm
+export NVM_DIR="$HOME/.nvm"
+[[ -s "$NVM_DIR/nvm.sh" ]] && source "$NVM_DIR/nvm.sh"
+[[ -s "$NVM_DIR/bash_completion" ]] && source "$NVM_DIR/bash_completion"
 
 # GStreamer
 export PKG_CONFIG_PATH="/Library/Frameworks/GStreamer.framework/Versions/1.0/lib/pkgconfig${PKG_CONFIG_PATH:+:$PKG_CONFIG_PATH}"
