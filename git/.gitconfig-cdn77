@@ -2,3 +2,6 @@
     name = Jakub Janeček
     email = jakub.janecek@cdn77.com
 
+[remote "origin"]
+    fetch = +refs/tags/*:refs/tags/*
+
