@@ -1,0 +1,10 @@
+%YAML 1.2
+---
+# PHP that starts in code mode (no <?php needed), so diff hunks get highlighted
+name: PHP (code)
+file_extensions:
+  - php
+scope: source.php.code
+contexts:
+  main:
+    - include: scope:source.php
